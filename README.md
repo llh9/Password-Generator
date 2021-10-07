@@ -1,5 +1,5 @@
 # Password-Generator
-![alt text](./assets\Images\03-javascript-homework-demo.png)
+![Image of Application GUI](./assets\Images\03-javascript-homework-demo.png)
 
 This application implememts a password generator.
 I was tasked with modifying starter code t0 create an application that enables employees to generate random passwords based on criteria that they’ve selected. 
