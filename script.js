@@ -6,11 +6,12 @@ var lowercase;
 var numerical;
 var special;
 var genCriteria = [uppercase, lowercase, numerical, special]
-var selectChars;//var GenCriteria = [LengthCriteria, uppercase, lowercase, numerical, special]
+var selectChars = '';//var GenCriteria = [LengthCriteria, uppercase, lowercase, numerical, special]
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
+
   // Create password generation algorithm
   function generatePassword(){
     //ask for password length and assign length to lengthCriteria 
@@ -63,28 +64,28 @@ function writePassword() {
       //print number to console
       console.log(numbers);
 
-      var specialChar = prompt("Would you like to include special characters? Please enter y for yes or n for no")
-      specialChar = specialChar.toUpperCase(); 
-      if(specialChar != "N" && specialChar != "Y"){
+      var specialChars = prompt("Would you like to include special characters? Please enter y for yes or n for no")
+      specialChars = specialChars.toUpperCase(); 
+      if(specialChars != "N" && specialChars != "Y"){
         alert("Sorry you did not submit a valid entry!");
         return;
       }
 
       //print specialchar to console
-      console.log(specialChar);
+      console.log(specialChars);
 
     }
     //make all local values global
     genCriteria[0] = upperCase;
     genCriteria[1] = lowerCase;
     genCriteria[2] = numbers;
-    genCriteria[3] = specialChar;
+    genCriteria[3] = specialChars;
     console.log(genCriteria);
     LengthCriteria = lengthCriteria;
     uppercase = upperCase;
     lowercase = lowerCase;
     numerical = numbers;
-    special = specialChar;
+    special = specialChars;
     //create an array to detect if no character type was selected
     var notAllowed = ["N", "N", "N", "N"];
     if (genCriteria.toString() === notAllowed.toString()){
