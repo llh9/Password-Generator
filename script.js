@@ -103,7 +103,7 @@ function writePassword() {
         selectChars = selectChars.concat("0123456789");
       }
       if (genCriteria[3] == "Y"){
-        selectChars = selectChars.concat("!@#$%^&*()-_+=~/<>?");
+        selectChars = selectChars.concat("!@#$%^&*()-_+=~/|[]{},.`<>?");
       }
     }
 

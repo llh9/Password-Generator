@@ -2,24 +2,24 @@
 ![Image of Application GUI](./assets\Images\03-javascript-homework-demo.png)
 
 This application implememts a password generator.
-I was tasked with modifying starter code t0 create an application that enables employees to generate random passwords based on criteria that they’ve selected. 
+I was tasked with modifying starter code to create an application that enables employees to generate random passwords based on criteria that they’ve selected. 
 This app runs in the browser and features dynamically updated HTML and CSS powered by JavaScript code that I wrote. 
 The password can include special characters specified by the OWASP Foundation.
 
 ## To Users
 
-As a user, you can randomly generate a password that meets certain criteria which strengthens its security. Upon clicking the generate password button, the user is prompted with a series of questions that lets them select their desired criteria to apply to the generation of their password. If any invalid value or entry is submitted, it is detected and the user is alerted and must restart the selection process. Once all of the selection options are submitted, their password is presented to them via the text area above the "Generate Password" button.
+As a user, you can randomly generate a password that meets certain criteria which strengthens its security. Upon clicking the generate password button, you will be prompted with a series of questions that require you to select your desired criteria to apply to the generation of your password. If any invalid value or entry is submitted, it will be detected, you will be alerted and must restart the selection process. Once all of the selection options are submitted, your password will be presented to you via the text area above the "Generate Password" button.
 
 ## Featured Criteria
 
 Each of the OPTIONALLY featured criteria adds sequrity.
-The 5 criteria features that provide the security offered by this password generator and are listed below.
+The 5 criteria features that provide the security offered by this password generator are listed below.
 
-1) Password length 
+1) Desired Password length (8<=>128 characters) 
 2) Inclusion of uppercase letters
 3) Inclusion of lowercase letters
 4) Inclusion of numerical characters
-5) Inclusion of special characters
+5) Inclusion of special characters (~!@#$%^&*()_-+=|,./?<>`{}[])
 
 ## Programming Details
 
