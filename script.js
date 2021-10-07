@@ -14,12 +14,16 @@ function writePassword() {
   // Create password generation algorithm
   function generatePassword(){
     //ask for password length and assign length to lengthCriteria 
-    var lengthCriteria = prompt("Select Password length between 8 and 128 characters.");
+    var lengthCriteria = prompt("Select Password length. Please enter a NUMBER between 8 and 128 characters.");
 
     // print lengthCriteria to console 
     console.log(lengthCriteria);
 
     //Verify length selection is allowable and if so procede to uppercase inclusion/exclusion
+    if (isNaN(lengthCriteria) !== isNaN("1") ){
+      alert("You have entered an invalid value!");
+      return;
+    }
     if (lengthCriteria < 8 || lengthCriteria > 128 ){
       alert("You have entered an invalid value!");
       return;
